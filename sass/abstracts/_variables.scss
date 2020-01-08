@@ -1,10 +1,27 @@
-//COLOR
+//COLORS
 $color-primary: rgb(243, 150, 28);
+$color-primary-dark: rgb(192, 117, 19);
 $color-secondary: rgb(241, 64, 64);
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-quad-light: #7ed56f;
+$color-quad-dark: #28b485;
+
+$color-gray-light1: #f7f7f7;
 
 $color-white: #fff;
 $color-gray-dark: #777;
 $color-black: #000;
+
+//FONT
+$default-font-size: 1.6rem;
+
+//EFFECTS
+$box-shadow-small: 0 1.5rem 4rem rgba($color-black, 0.15);
+$box-shadow-medium: 0 1.5rem 4rem rgba($color-black, 0.4);
+$box-shadow-big: 0 2.5rem 4rem rgba($color-black, 0.5);
 
 //GRID
 $grid-width: 114rem;
