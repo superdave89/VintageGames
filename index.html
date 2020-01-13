@@ -15,6 +15,35 @@
     <title>Vintage Games</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button"
+        ><span class="navigation__icon">&nbsp;</span></label
+      >
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span>About Vintage</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>02</span>Systems</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>03</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Browse</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Order Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header__logo-box">
         <img src="img/LogoMakr_1e6Kqo.png" alt="Logo" class="header__logo" />
@@ -25,7 +54,9 @@
           <span class="heading-primary--sub">Take me back...</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">Level up!</a>
+        <a href="section-browse" class="btn btn--white btn--animated"
+          >Level up!</a
+        >
       </div>
     </header>
 
@@ -124,7 +155,7 @@
           </div>
         </div>
       </section>
-      <section class="section-tours">
+      <section class="section-browse">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular systems</h2>
         </div>
@@ -155,7 +186,7 @@
                     <p class="card__price-value">6000</p>
                     <p class="card__price-only">games!</p>
                   </div>
-                  <a href="#" class="btn btn--white">Browse</a>
+                  <a href="#popup" class="btn btn--white">Browse</a>
                 </div>
               </div>
             </div>
@@ -186,7 +217,7 @@
                     <p class="card__price-value">2000</p>
                     <p class="card__price-only">games</p>
                   </div>
-                  <a href="#" class="btn btn--white">Browse</a>
+                  <a href="#popup" class="btn btn--white">Browse</a>
                 </div>
               </div>
             </div>
@@ -218,14 +249,14 @@
                     <p class="card__price-value">400</p>
                     <p class="card__price-only">games</p>
                   </div>
-                  <a href="#" class="btn btn--white">Browse</a>
+                  <a href="#popup" class="btn btn--white">Browse</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn btn--orange">See all games</a>
+          <a href="#popup" class="btn btn--orange">See all games</a>
         </div>
       </section>
       <section class="section-stories">
@@ -397,5 +428,35 @@
         </div>
       </div>
     </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/HANDHELDS.jpeg" alt="Tour photo" class="popup__img" />
+          <img
+            src="img/vintage-collection.jpeg"
+            alt="Product photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#section-browse" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start shopping now!
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before ordering
+          </h3>
+          <p class="popup__text">
+            Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula
+            porta felis euismod semper. Cras justo odio, dapibus ac facilisis
+            in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet
+            rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra
+            augue. Cras mattis consectetur purus sit amet fermentum. Cras justo
+            odio, dapibus ac facilisis in, egestas eget quam.
+          </p>
+          <a href="#" class="btn btn--orange">Order now!</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
