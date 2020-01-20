@@ -9,17 +9,44 @@
     transition: all 0.2s;
     outline-offset: 1rem;
 
+    @include respond(tab_port) {
+      // float: left;
+      position: relative;
+      width: 33.3333333%;
+      box-shadow: $box-shadow-medium;
+    }
+
     &--p1 {
       left: 50%;
       top: -2rem;
+
+      @include respond(tab_port) {
+        top: 1rem;
+        left: 80%;
+        transform: scale(1.8);
+      }
     }
     &--p2 {
       left: 30%;
       top: 8rem;
+
+      @include respond(tab_port) {
+        top: 17rem;
+        transform: scale(1.8);
+        z-index: 100;
+        left: 0%;
+      }
     }
     &--p3 {
       left: 0;
       top: 18rem;
+
+      @include respond(tab_port) {
+        top: -8rem;
+        transform: scale(1.8);
+        zindex: 100;
+        left: 0;
+      }
     }
 
     &:hover {
